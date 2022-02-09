@@ -22,11 +22,11 @@ Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wif
 2. Once at the Kali loading screen, enter the default login and password, *kali* and *kali* , to log in.
 3. Connect to network and then open a terminal window and run the following command. Keep in mind that it can take up to an hour to upgrade on a slow connection. `sudo apt update && apt upgrade`
 
-### Change Root Password and Optional SSH Setup
+### **Optional** Change Root Password and Optional SSH Setup
 
 1. Switch to root user `sudo su root`
 2. Change the password with: `passwd root`
-3. **Optional but recommended** Setup SSH with starting the service on boot by going into the root directory and running the following commands
+3. Setup SSH with starting the service on boot by going into the root directory and running the following commands
 
 ```bash
 cd ~/../..
@@ -35,9 +35,6 @@ dpkg-reconfigure openssh-server
 update-rc.d -f ssh remove
 update-rc.d -f ssh defaults
 nano /etc/ssh/sshd_config
-
-
-
 ```
 
 > In the nano window that opens, make sure that “PermitRootLogin” is
@@ -51,6 +48,20 @@ update-rc.d -f ssh enable 2 3 4 5
 ### Autologin to Root When Booting
 
 1. Open the configuaration file `nano /etc/lightdm/lightdm.conf`
-2.
+2. Under `[Seat:*]` uncomment and set the variables to these values
+
+```bash
+autologin-user=kali
+autologin-user-timeout=0
+```
+
+### Making the PI headless
+
+1. Some Pi's will not boot if there is nothing plugged into the HDMI port so we will uncomment a line to circumvent this issue `nano /boot/config.txt`. Yet again use ctrl+x to exit and save
+
+   ```bash
+   hdmi_force_hotplug=1
+   ```
+
 
 Follow the [article](https://mr-intern.medium.com/2021-guide-to-making-your-raspberry-pi-4-a-headless-ethical-hacking-computer-eeca9d24317a) to setup a headless Raspberry Pi
