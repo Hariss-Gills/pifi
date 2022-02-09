@@ -28,32 +28,33 @@ Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wif
 2. Change the password with: `passwd root`
 3. Setup SSH with starting the service on boot by going into the root directory and running the following commands
 
-```bash
-cd ~/../..
-cd /etc/ssh/
-dpkg-reconfigure openssh-server
-update-rc.d -f ssh remove
-update-rc.d -f ssh defaults
-nano /etc/ssh/sshd_config
-```
+   ```bash
+   cd ~/../..
+   cd /etc/ssh/
+   dpkg-reconfigure openssh-server
+   update-rc.d -f ssh remove
+   update-rc.d -f ssh defaults
+   nano /etc/ssh/sshd_config
+   ```
 
-> In the nano window that opens, make sure that “PermitRootLogin” is
-> un-tabbed to allow root login. After this is done, you can hit *Control-x* to exit the nano window after applying the changes. Enable the updates with:
+   > In the nano window that opens, make sure that “PermitRootLogin” is
+   > un-tabbed to allow root login. After this is done, you can hit *Control-x* to exit the nano window after applying the changes. Enable the updates with:
+   >
 
-```bash
-sudo service ssh restart
-update-rc.d -f ssh enable 2 3 4 5
-```
+   ```bash
+   sudo service ssh restart
+   update-rc.d -f ssh enable 2 3 4 5
+   ```
 
 ### Autologin to Root When Booting
 
 1. Open the configuaration file `nano /etc/lightdm/lightdm.conf`
 2. Under `[Seat:*]` uncomment and set the variables to these values
 
-```bash
-autologin-user=kali
-autologin-user-timeout=0
-```
+   ```bash
+   autologin-user=kali
+   autologin-user-timeout=0
+   ```
 
 ### Making the PI headless
 
