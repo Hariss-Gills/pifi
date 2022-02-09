@@ -52,7 +52,7 @@ Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wif
 2. Under `[Seat:*]` uncomment and set the variables to these values
 
    ```bash
-   autologin-user=kali
+   autologin-user=root
    autologin-user-timeout=0
    ```
 
