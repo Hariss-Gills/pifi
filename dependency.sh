@@ -1,2 +1,3 @@
 #!/bin/sh
-apt-get install postfix
+apt-get -y install postfix
+apt-get -y install sendemail
