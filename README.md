@@ -65,4 +65,5 @@ Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wif
    ```
 
 
+
 Follow the [article](https://mr-intern.medium.com/2021-guide-to-making-your-raspberry-pi-4-a-headless-ethical-hacking-computer-eeca9d24317a) to setup a headless Raspberry Pi
