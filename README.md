@@ -2,7 +2,7 @@
 
 Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wifi networks within the area using [wifite](https://github.com/kimocoder/wifite2) and then emails the succesful results to an email address of your choosing by running the `script.sh` script.
 
-## Prequiestes
+## Prerequisites
 
 * Any [Raspberry Pi](https://www.raspberrypi.com/products/) Zero/Zero W, Zero 2/ Zero 2 W, 1, 2, 3, 4 or 400
 * Bootable USB or microSD with the latest [Kali Linux image](https://www.kali.org/get-kali/#kali-arm) (32-bit recommended). At least 16GB capacity. Class 10 cards are highly recommended.
