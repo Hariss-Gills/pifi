@@ -64,7 +64,5 @@ Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wif
    hdmi_force_hotplug=1
    ```
 
-
-
 Follow the [article](https://mr-intern.medium.com/2021-guide-to-making-your-raspberry-pi-4-a-headless-ethical-hacking-computer-eeca9d24317a) to setup a headless Raspberry Pi
 Follow the [article](https://null-byte.wonderhowto.com/forum/to-spoof-e-mail-using-sendemail-and-postfix-0355693/) to setup Postfix
