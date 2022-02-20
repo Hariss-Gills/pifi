@@ -1,18 +1,18 @@
-# PiFi - A Raspberry Pi wifi hacker
+# 🥧 PiFi - A Raspberry Pi wifi hacker 📡 
 
-Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wifi networks within the area using [wifite](https://github.com/kimocoder/wifite2) and then emails the succesful results to an email address of your choosing by running the `script.sh` script.
+Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wifi networks within the area using [wifite](https://github.com/kimocoder/wifite2) and then 📧 emails the succesful results to an email address of your choosing by running the `script.sh` script.
 
 
 https://user-images.githubusercontent.com/69246015/154826402-699d605c-c78b-43df-abe6-2496f34fe309.mp4
 
 
-## Prerequisites
+## 📝Prerequisites📝
 
 * Any [Raspberry Pi](https://www.raspberrypi.com/products/) Zero/Zero W, Zero 2/ Zero 2 W, 1, 2, 3, 4 or 400
-* Bootable USB or microSD with the latest [Kali Linux image](https://www.kali.org/get-kali/#kali-arm) (32-bit recommended). At least 16GB capacity. Class 10 cards are highly recommended.
+* Bootable USB or microSD with the latest 🐧 [Kali Linux image](https://www.kali.org/get-kali/#kali-arm) (32-bit recommended). At least 16GB capacity. Class 10 cards are highly recommended.
 * all Raspberry Pi models from the Raspberry Pi 3 Model B (2016) and later ship with on-board WiFi. If you have an older model on hand, or if your on-board WiFi module is not functioning, you will need to use an **external USB WiFi adapter**.
 
-## Steps for Setup
+## ✔️Steps for Setup✔️
 
 ### Creating a bootable USB or microSD
 
@@ -87,7 +87,7 @@ https://user-images.githubusercontent.com/69246015/154826402-699d605c-c78b-43df-
    bash /root/pifi/script.sh
    ```
 
-## Going through an Attack
+## ⚠️Going through an Attack⚠️
 
 ### Right before
 
@@ -100,6 +100,6 @@ https://user-images.githubusercontent.com/69246015/154826402-699d605c-c78b-43df-
 ### After
 1. Escape the scene
 
-
-Follow the [article](https://mr-intern.medium.com/2021-guide-to-making-your-raspberry-pi-4-a-headless-ethical-hacking-computer-eeca9d24317a) to setup a headless Raspberry Pi
-Follow the [article](https://null-byte.wonderhowto.com/forum/to-spoof-e-mail-using-sendemail-and-postfix-0355693/) to setup Postfix
+## 📖Sources📖
+* [article](https://mr-intern.medium.com/2021-guide-to-making-your-raspberry-pi-4-a-headless-ethical-hacking-computer-eeca9d24317a) to setup a headless Raspberry Pi
+* [article](https://null-byte.wonderhowto.com/forum/to-spoof-e-mail-using-sendemail-and-postfix-0355693/) to setup Postfix
