@@ -2,6 +2,10 @@
 
 Whenever the Raspberry Pi Device is turned on, it attempts to attack all the wifi networks within the area using [wifite](https://github.com/kimocoder/wifite2) and then emails the succesful results to an email address of your choosing by running the `script.sh` script.
 
+
+https://user-images.githubusercontent.com/69246015/154826402-699d605c-c78b-43df-abe6-2496f34fe309.mp4
+
+
 ## Prerequisites
 
 * Any [Raspberry Pi](https://www.raspberrypi.com/products/) Zero/Zero W, Zero 2/ Zero 2 W, 1, 2, 3, 4 or 400
